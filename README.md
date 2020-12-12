@@ -6,7 +6,7 @@ A fun website to play a pinup themed memory game on 3 levels. The website featur
 Then the user is led to a easy level memory game with 12 cards. When succesfull, the medium level (16 cards) appears. At succesfull completion the difficoult 
 level appears with 28 cards. 
 
-The desired level is adjustable in the menu bar. There is also a possibility to share the site and to see your score.
+The desired level is adjustable in the menu bar. There is also a possibility to see your score.
 This site is more attractive then the average online memory game and therefore has potential to entertain the visitors.
 
 The goal of the site is to entertain, the goal of the visitor is to be entertained. 
