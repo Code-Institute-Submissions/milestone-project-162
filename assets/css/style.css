@@ -9,8 +9,18 @@ h1 {
     font-size: 76px;
 }
 
+h2 {
+    font-size: 40px;
+    color: white;
+    font-family: "Smythe";
+    text-align: center;
+}
+
 p {
     font-size: 16px;
+    color: white;
+    font-family: "Smythe";
+    text-align: center;
 }
 
 a {
@@ -116,6 +126,22 @@ a.footer-link {
     color: white;
     font-weight: 900;
     font-size: 100px;
+}
+
+/*------------------------cards */
+
+img.card-back {
+    border-radius: 8px;
+    padding: 10px;
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.card-holder {
+    height: 25vw;
+    min-height: 150px;
+    max-height: 250px;
 }
 
 /*------------------------Media Query */

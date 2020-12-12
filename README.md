@@ -3,8 +3,8 @@ Memory Game-
 How naughty is your memory?
 
 A fun website to play a pinup themed memory game on 3 levels. The website features a starting page with a black and white background gif and a play button. 
-Then the user is led to a easy level memory game with 9 cards. When succesfull, the medium level (16 cards) appears. At succesfull completion the difficoult 
-level appears with 32 cards. 
+Then the user is led to a easy level memory game with 12 cards. When succesfull, the medium level (16 cards) appears. At succesfull completion the difficoult 
+level appears with 28 cards. 
 
 The desired level is adjustable in the menu bar. There is also a possibility to share the site and to see your score.
 This site is more attractive then the average online memory game and therefore has potential to entertain the visitors.
