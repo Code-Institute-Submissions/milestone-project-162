@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="background-image">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Memory</title>
+    <script src="https://kit.fontawesome.com/185656999b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Memory Game</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html">Memory</a>
+            <a class="navbar-brand" href="index.html">Memory Game</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,7 +23,7 @@
                         <a class="nav-link" href="#">Share</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownscore" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Score
                         </a>
@@ -31,7 +32,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownlevel" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Level
                         </a>
@@ -46,52 +47,18 @@
         </nav>
     </header>
     <section>
-        <div>
-           <h2>How naughty is your memory?</h2> 
-        </div>
-        <div>
-            <p>How to play</p>
-        </div>
-    </section>
-    <section class="container">
-        <div class="row">
-            <div class="col-sm">
-                <img src="" alt="">
+            <div id="hero-gif" class="overlay">
+                <h1 class="overlay-text" >How naughty is your memory?</h1>
+                <a href="level1.html">
+                    <p class="overlay-text">press to play</p>
+                    <i class="far fa-play-circle overlay-icon"></i>
+                </a>
             </div>
-            <div class="col-sm">
-                <img src="" alt="">
-            </div>
-            <div class="col-sm">
-                <img src="" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <img src="" alt="">
-            </div>
-            <div class="col-sm">
-                <img src="" alt="">
-            </div>
-            <div class="col-sm">
-                <img src="" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <img src="" alt="">
-            </div>
-            <div class="col-sm">
-                <img src="" alt="">
-            </div>
-            <div class="col-sm">
-                <img src="" alt="">
-            </div>
-        </div>
     </section>
     <footer class="fixed-bottom footer-border">
             <p class="footer-text"><a class="footer-link" href="https://giphy.com/gifs/woman-legs-2j5Jj6bjfNJLy">gif via GIPHY</a></p>
     </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>

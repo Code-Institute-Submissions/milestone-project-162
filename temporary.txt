@@ -1,0 +1,8 @@
+to do
+
+make flex container css
+make javascript work
+delete javascript file
+write one by myself
+
+x
