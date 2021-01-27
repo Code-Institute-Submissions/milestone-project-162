@@ -5,6 +5,11 @@ html {
     height: 100vw;
 }
 
+body {
+    width: fit-content;
+    height: fit-content;
+}
+
 h1 {
     font-size: 76px;
 }
@@ -14,15 +19,26 @@ h2 {
     color: black;
     font-family: "Smythe";
     text-align: center;
-    padding-top: 20px;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 36px;
+    color: white;
+    font-family: "Smythe";
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 24px;
     color: black;
-    font-family: "Rokkitt";
+    font-family: "Smythe";
     text-align: center;
-    font-weight: 200;
+    font-weight: 700;
+    margin: 0;
 }
 
 a {
@@ -48,72 +64,31 @@ hr {
     padding-top: 50px;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 /*------------------------nav bar */
 header {
-    background-color: rgba(255,255,255, 0.7);
-    border: 2px solid black;
+  margin: auto;
+  width: 100vw;
 }
 
-.navbar-nav {
-    padding-left: 80%;
+.scorekeeper {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
 }
 
-.nav-item {
-    padding: 0 20% 0 20%;
+.flips {
+    float: right; 
+    margin-left: 30%;
 }
-
-.nav-link:hover {
-    color: rgb(161, 84, 8)!important;
-    -webkit-transition: color 0.2s ease-out;
-    -moz-transition: color 0.2s ease-out;
-    -ms-transition: color 0.2s ease-out;
-    -o-transition: color 0.2s ease-out;
-    transition: color 0.2s ease-out;
-}
-
-.navbar-brand {
-    padding-left: 3%;
-}
-
-.navbar-brand:hover {
-    color: rgb(161, 84, 8)!important;
-    -webkit-transition: color 0.2s ease-out;
-    -moz-transition: color 0.2s ease-out;
-    -ms-transition: color 0.2s ease-out;
-    -o-transition: color 0.2s ease-out;
-    transition: color 0.2s ease-out;
-}
-
-.navbar-light .navbar-brand {
-    color: black;
-    font-family: 'Smythe', cursive;
-    font-size: 30px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.navbar-light .navbar-toggler {
-    color: black;
-    border-color: black;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-    font-family: 'Rokkitt';
-    font-size: 20px;
-}
-
-.dropdown-menu {
-    background-color: rgba(255,255,255, 0.7);
-    margin-top: 10px;
-}
-
-.dropdown-item {
-    font-family: "Rokkitt";
-}
-
-.dropdown-item:active {
-    background-color: rgb(161, 84, 8);
+    
+.time {
+    float: left;
+    margin-right: 30%;
 }
 
 /*------------------------overlay */
@@ -131,14 +106,13 @@ header {
     bottom: 0;
     z-index: 2; 
     text-align: center;
-    cursor: pointer;
 }
 
 .overlay-image {
     background-image: url("https://media.giphy.com/media/2j5Jj6bjfNJLy/giphy.gif");
-    height: 100vh;
-    width: 100vw;
     background-size: cover;
+    width: 100vw; 
+    height: 100vw; 
     position: relative;
     background-repeat: no-repeat;
 }
@@ -148,21 +122,40 @@ header {
     font-family: 'Smythe', cursive;
     font-weight: 400;
     margin: auto;
-    padding: 10% 3% 3% 3%;
+    padding: 8% 3% 3% 3%;
 }
 
 .overlay-icon {
     color: white;
     font-weight: 900;
     font-size: 100px;
+}  
+
+#seconds {
+    font-size: 36px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    max-width: 150px;
+    margin-bottom: 20px;
 }
+
+#seconds:active {
+    color: white;
+}
+
+#play {
+    background-color: transparent;
+    cursor: pointer;
+}
+
 
 /*------------------------game */
 
 /*learning to work with flexbox instead of bootstrap: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
 .game {
-    width: 500px;
-    height: 500px;
+    width: 100vw;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -172,24 +165,27 @@ header {
 
 .card {
     display: inline-block;
-    height: 100px;
-    width: 100px;
+    height: 4em;
+    width: 4em;
     position: relative;
     background-color: transparent;
     overflow: hidden;
     border: 1px solid black;
     border-radius: 8px;
     margin: 5px;
+}
+
+.hover {
     cursor: pointer;
     transform: scale(1);
 }
 
-.card:hover {
+.hover:hover {
     transform:scale(1.05,1.05);
     transition: transform .2s;
 }
 
-.card:active {
+.hover:active {
     transform: scale(.99);
 }
 
@@ -232,4 +228,14 @@ img {
     }
 }
 
+@media only screen and (min-width: 700px) {
+    .game {
+        width: 800px;
+        height: auto;
+    }
 
+    .card {
+    height: 110px;
+    width: 110px;
+    }
+}    

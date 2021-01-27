@@ -2,11 +2,10 @@ Memory Game-
 
 How naughty is your memory?
 
-A fun website to play a pinup themed memory game on 3 levels. The website features a starting page with a black and white background gif and a play button. 
-Then the user is led to a easy level memory game with 12 cards. When succesfull, the medium level (16 cards) appears. At succesfull completion the difficoult 
-level appears with 28 cards. 
+A fun website to play a pinup themed memory game. The website features a starting page with a black and white background gif and a play button. 
+Then the user is led to a  memory game with :: cards. The time of the game is adjustable at the start of the game, so the player can make a real challenge for themselves. 
 
-The desired level is adjustable in the menu bar. There is also a possibility to see your score.
+There is also a possibility to see your score, beside the time- it is the won vs lost score of your session. 
 This site is more attractive then the average online memory game and therefore has potential to entertain the visitors.
 
 The goal of the site is to entertain, the goal of the visitor is to be entertained. 
@@ -29,5 +28,12 @@ As a fan, i want to share this game.
 
 Wireframes: 
 
+
+bugs that i see on the way: 
+-if card is clicked as card one, falsley matched, fipped back and again as card one - it does not flip. 
+-onload or documentreadystate triggers overlay but does this continuesly, not just one time. whyyyyy
+When the page is loaded, an overlay is activated- and on click, this overlay should disappear. The weird thing is, that it only works a little. Sometimes is disappears/comes back/disappears/comes back and then it is suddenly gone (if you click it loads of times) but i cannot figure out why. I have a feeling when the page is loading still maybe? But too inconsistent for that...Any tip is welcome! TIA
+-how to chain events? code is too long, this could be prettier!
+-in time function: when time is finished, lostGame function is called. But this gets called right away when starting up the game. Whyyyy?????
 
 

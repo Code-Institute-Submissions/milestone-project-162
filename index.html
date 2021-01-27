@@ -10,124 +10,158 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html">Memory Game</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Share</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownscore" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Score
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item score-counter" href="#"></a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownlevel" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Level
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Level 1</a>
-                            <a class="dropdown-item" href="#">Level 2</a>
-                            <a class="dropdown-item" href="#">Level 3</a>
-                        </div>
-                    </li>
-                </ul>
+<!--overlay to insert desired playtime-->
+        <div id="overlay" class="overlay-image">
+            <h1 class="overlay-text">How naughty is your memory?</h1>
+                <div class="overlay-text">
+                <h3 >Insert desired playtime in seconds</h3>
+                    <br>
+                        <input name="seconds" type="text" maxlength="3" id="seconds" placeholder="100" aria-placeholder="insert your desired playtime in seconds, for example 100" required/>
+                    <br>
+                <h3>to play</h3>
+                <div class="padding-bottom"></div>
+                <button id="play"><i class="far fa-play-circle overlay-icon"></i></button>
             </div>
-        </nav>
-    </header>
-    <section id="overlay">
-        <div class="overlay-image">
-                <h1 class="overlay-text" >How naughty is your memory?</h1>
-                <a href="index.html">
-                    <p class="overlay-text">press to play</p>
-                    <i class="far fa-play-circle overlay-icon"></i>
-                </a>
-            </div>
-    </section>
-    <div class="padding-bottom padding-top"></div>
-    <section class="header">
-            <h2>How naughty is your memory</h2>
-            <p>Click on a card and search its match</p>
+        </div>
+<!--header of game with remaining seconds and flip counter-->
+        <section class="header">
             <div class="padding-bottom"></div>
-            <span class="score"><p>Score</p></span><span class="time"><p>Time</p></span>
-    </section>
+            <h2>Click on a card and search its match</h2>
+            <hr>
+            <div class="scorekeeper">
+                <span class="flips">
+                    <p>Flips:</p><p id="flips"></p>
+                </span>
+                <span class="time">
+                    <p>Time:</p><p id="time"></p>
+                </span>
+            </div>
+        </section>
+    </header>
+<!--memory game field-->
     <section class="game">
-            <div class="card" data-card="10">
+            <div class="card hover" data-card="10">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" data-card="10" src="assets/img/girls/10.png" alt="">
             </div>
-             <div class="card" data-card="10">
+             <div class="card hover" data-card="10">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" data-card="10" src="assets/img/girls/10.png" alt="">
             </div>
-             <div class="card" data-card="11">
+             <div class="card hover" data-card="11">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" data-card="11" src="assets/img/girls/11.png" alt="">
             </div>
-             <div class="card" data-card="11">
+             <div class="card hover" data-card="11">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/11.png" alt="">
             </div>
-            <div class="card" data-card="12">
+            <div class="card hover" data-card="12">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/12.png" alt="">
             </div>
-             <div class="card" data-card="12">
+             <div class="card hover" data-card="12">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/12.png" alt="">
             </div>
-             <div class="card" data-card="13">
+             <div class="card hover" data-card="13">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/13.png" alt="">
             </div>
-             <div class="card" data-card="13">
+             <div class="card hover" data-card="13">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/13.png" alt="">
             </div>
-            <div class="card" data-card="14">
+            <div class="card hover" data-card="14">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/14.png" alt="">
             </div>
-             <div class="card" data-card="14">
+             <div class="card hover" data-card="14">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/14.png" alt="">
             </div>
-             <div class="card" data-card="2">
+             <div class="card hover" data-card="2">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/2.png" alt="">
             </div>
-             <div class="card" data-card="2">
+             <div class="card hover" data-card="2">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/2.png" alt="">
             </div>
-            <div class="card" data-card="3">
+            <div class="card hover" data-card="3">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/3.png" alt="">
             </div>
-             <div class="card" data-card="3">
+             <div class="card hover" data-card="3">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/3.png" alt="">
             </div>
-             <div class="card" data-card="4">
+             <div class="card hover" data-card="4">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/4.png" alt="">
             </div>
-             <div class="card" data-card="4">
+             <div class="card hover" data-card="4">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/4.png" alt="">
+            </div>
+             <div class="card hover" data-card="5">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/5.png" alt="">
+            </div>
+             <div class="card hover" data-card="5">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/5.png" alt="">
+            </div>
+             <div class="card hover" data-card="6">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/6.png" alt="">
+            </div>
+            <div class="card hover" data-card="6">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/6.png" alt="">
+            </div>
+             <div class="card hover" data-card="7">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/7.png" alt="">
+            </div>
+             <div class="card hover" data-card="7">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/7.png" alt="">
+            </div>
+             <div class="card hover" data-card="8">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/8.png" alt="">
+            </div>
+            <div class="card hover" data-card="8">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/8.png" alt="">
+            </div>
+             <div class="card hover" data-card="9">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/9.png" alt="">
+            </div>
+             <div class="card hover" data-card="9">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/9.png" alt="">
+            </div>
+            <div class="card hover" data-card="15">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/15.png" alt="">
+            </div>
+            <div class="card hover" data-card="15">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/15.png" alt="">
+            </div>
+             <div class="card hover" data-card="16">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/16.png" alt="">
+            </div>
+             <div class="card hover" data-card="16">
+                <img class="back" src="assets/img/back/back.jpg" alt="">
+                <img class="front" src="assets/img/girls/16.png" alt="">
             </div>
     </section>
+<!--javascript-->    
     <script src="assets/js/script.js"></script>
 </body>
 </html>
