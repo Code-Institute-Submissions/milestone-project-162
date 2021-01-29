@@ -10,19 +10,32 @@
 </head>
 <body>
     <header>
+<!--overlays-->
 <!--overlay to insert desired playtime-->
-        <div id="overlay" class="overlay-image">
+        <div id="overlay-seconds" class="overlay-seconds-image">
             <h1 class="overlay-text">How naughty is your memory?</h1>
-                <div class="overlay-text">
-                <h3 >Insert desired playtime in seconds</h3>
-                    <br>
-                        <input name="seconds" type="text" maxlength="3" id="seconds" placeholder="100" aria-placeholder="insert your desired playtime in seconds, for example 100" required/>
-                    <br>
-                <h3>to play</h3>
-                <div class="padding-bottom"></div>
-                <button id="play"><i class="far fa-play-circle overlay-icon"></i></button>
-            </div>
-        </div>
+                    <form>
+                        <label for="playtime">
+                            <h3 class="overlay-text-small">Insert desired playtime in seconds</h3>
+                        </label>
+                        <br>
+                        <input type="text" name="seconds" maxlength="3" id="seconds" placeholder="100" />
+                        <br>
+                        <h3 class="overlay-text-small">to play</h3>
+                        <!--how to add icon to submit field answer by johnkennedy9147 https://forum.freecodecamp.org/t/solved-adding-font-awesome-icons-to-an-input-button/74139-->
+                            <button id="play" class="overlay-icon"><i class="far fa-play-circle overlay-icon"></i></button>
+                    </form>
+                </div>
+<!--overlay victory-->
+            <div id="overlay-victory" class="overlay-victory-image">
+                <h1 class="overlay-text">Victory!</h1>
+                <h3 class="overlay-text-small">You won. Enjoy your Teese.</h3>
+            </div> 
+<!--overlay lost game-->
+            <div id="overlay-lost" class="overlay-lost-image">
+                <h1 class="overlay-text">Oh No!</h1>
+                <h3 class="overlay-text-small">You lost.</h3>
+            </div>           
 <!--header of game with remaining seconds and flip counter-->
         <section class="header">
             <div class="padding-bottom"></div>
@@ -48,7 +61,7 @@
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" data-card="10" src="assets/img/girls/10.png" alt="">
             </div>
-             <div class="card hover" data-card="11">
+<!--             <div class="card hover" data-card="11">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" data-card="11" src="assets/img/girls/11.png" alt="">
             </div>
@@ -159,7 +172,7 @@
              <div class="card hover" data-card="16">
                 <img class="back" src="assets/img/back/back.jpg" alt="">
                 <img class="front" src="assets/img/girls/16.png" alt="">
-            </div>
+            </div-->
     </section>
 <!--javascript-->    
     <script src="assets/js/script.js"></script>

@@ -95,7 +95,9 @@ header {
 
 /*Some overlay properties from: w3schools https://www.w3schools.com/howto/howto_css_overlay.asp*/
 
-#overlay {
+#overlay-seconds,
+#overlay-victory,
+#overlay-lost {
     position: fixed;
     display: none; 
     width: 100%; 
@@ -108,8 +110,9 @@ header {
     text-align: center;
 }
 
-.overlay-image {
-    background-image: url("https://media.giphy.com/media/2j5Jj6bjfNJLy/giphy.gif");
+.overlay-seconds-image,
+.overlay-victory-image,
+.overlay-lost-image {
     background-size: cover;
     width: 100vw; 
     height: 100vw; 
@@ -117,18 +120,40 @@ header {
     background-repeat: no-repeat;
 }
 
-.overlay-text {
+.overlay-seconds-image {
+    background-image: url("https://media.giphy.com/media/2j5Jj6bjfNJLy/giphy.gif");
+}
+
+.overlay-victory-image {
+    background-image: url("https://media.giphy.com/media/p09nbHVNTYn6/giphy.gif");
+}
+
+.overlay-lost-image {
+    background-image: url("https://media.giphy.com/media/736he3qcXJhwQ/giphy.gif");
+}
+
+.overlay-text,
+.overlay-text-small {
     color: white;
     font-family: 'Smythe', cursive;
     font-weight: 400;
     margin: auto;
-    padding: 8% 3% 3% 3%;
+}
+
+.overlay-text {
+    padding: 4% 3% 3% 3%;
+}
+
+.overlay-text-small {
+    padding: 20px;
 }
 
 .overlay-icon {
     color: white;
     font-weight: 900;
     font-size: 100px;
+    background-color: transparent;
+    cursor: pointer;
 }  
 
 #seconds {
@@ -137,18 +162,23 @@ header {
     color: white;
     text-align: center;
     max-width: 150px;
-    margin-bottom: 20px;
 }
 
-#seconds:active {
-    color: white;
+input[type=text] {
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 5px;
 }
 
-#play {
-    background-color: transparent;
-    cursor: pointer;
+input[type=text]:focus {
+    border: 2px solid black;
+    border-radius: 12px;
+    outline: none;
 }
 
+button:focus {
+  outline: none;
+}
 
 /*------------------------game */
 
@@ -219,12 +249,19 @@ img {
 
 /*------------------------Media Query */
 @media only screen and (max-width: 1100px) {
-  #hero-gif {
-    background-image: url("https://media.giphy.com/media/2j5Jj6bjfNJLy/giphy.gif");
-    height: 60em;
-    overflow: hidden;
-    background-position: center center;
-    background-repeat: no-repeat;
+    #overlay-seconds,
+    #overlay-victory,
+    #overlay-lost  {
+        height: 60em;
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .overlay-text {
+        font-size: 50px;
+    }
+    .overlay-text-small {
+        font-size: 24px;
     }
 }
 
