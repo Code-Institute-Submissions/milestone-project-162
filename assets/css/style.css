@@ -154,6 +154,7 @@ header {
     font-size: 100px;
     background-color: transparent;
     cursor: pointer;
+    object-fit: contain;
 }  
 
 #seconds {
@@ -252,7 +253,7 @@ img {
     #overlay-seconds,
     #overlay-victory,
     #overlay-lost  {
-        height: 60em;
+        height: 100vh;
         overflow: hidden;
         background-position: center center;
         background-repeat: no-repeat;

@@ -52,10 +52,11 @@ function time() {
         document.getElementById("time").textContent = timeleft;
         console.log(timeleft);
         if (timeleft <= 0) {
-            onOverlayLost();
             clearInterval(interval);
+            onOverlayLost();
         } else if (matchedArr.length === cardsArr.length) {
             clearInterval(interval);
+            onOverlayVictory();
         };
     }, 1000);
 };
@@ -125,9 +126,9 @@ function match() {
     matchedArr.push(cardTwo);
     console.log(cardTwo);
     lock = false;
-        if (matchedArr.length === cardsArr.length)  {
-            onOverlayVictory();
-        };
+       // if (matchedArr.length === cardsArr.length)  {
+        //    onOverlayVictory();
+        //};
 };
 
 //if cards don't match
