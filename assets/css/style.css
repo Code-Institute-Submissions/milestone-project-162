@@ -1,20 +1,23 @@
 /*------------------------general */
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;400;700&family=Smythe&display=swap');
 
-html {
-    height: 100%;
-}
-
+html,
 body {
-    width: fit-content;
-    height: fit-content;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-image: url("../img/pattern.jpg");
 }
 
 h1 {
     font-size: 76px;
 }
 
-h2 {
+.heading1 {
+    font-size: 76px;
+}
+
+.heading2 {
     font-size: 40px;
     color: black;
     font-family: "Smythe";
@@ -22,7 +25,7 @@ h2 {
     margin: 10px;
 }
 
-h3 {
+.heading3 {
     font-size: 36px;
     color: white;
     font-family: "Smythe";
@@ -47,10 +50,6 @@ a {
     background-color: transparent;
 }
 
-body {
-    background-image: url("../img/pattern.jpg");
-}
-
 hr {
     border: 1px solid rgb(161, 84, 8);
     max-width: 15%;
@@ -72,7 +71,7 @@ hr {
 /*------------------------nav bar */
 header {
   margin: auto;
-  width: 100vw;
+  max-width: 90%;
 }
 
 .scorekeeper {
@@ -114,8 +113,8 @@ header {
 .overlay-victory-image,
 .overlay-lost-image {
     background-size: cover;
-    width: 100vw; 
-    height: 100vw; 
+    width: 100%; 
+    height: 100%; 
     position: relative;
     background-repeat: no-repeat;
 }
@@ -185,7 +184,7 @@ button:focus {
 
 /*learning to work with flexbox instead of bootstrap: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
 .game {
-    width: 100vw;
+    max-width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;

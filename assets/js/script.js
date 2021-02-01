@@ -9,21 +9,10 @@ let cardTwo;
 let flips = 0;
 let timeleft = getSeconds();
 
-//load and overlay seconds on
-/*/ https://www.youtube.com/watch?v=3uuQ3g92oPQ
-if (document.readystate === 'loading') {
-    console.log("loading");
-    document.addEventListener('DOMContentLoaded', ready);
-} else {
-    console.log("readystate")
-    onOverlaySeconds();
-};*/
-
 window.onload = onOverlaySeconds();
 
 //start game
 function startGame() {
-    console.log('startgame')
     shuffle();
     timeleft = getSeconds();
     time();
@@ -37,7 +26,7 @@ function startGame() {
         card.classList.add('hover');
     });
     flipCardsBack();
-}
+};
 
 //countdown timer
 // How to build a countdown? https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown answer of Teddy Koker
@@ -50,7 +39,6 @@ function time() {
     const interval = setInterval(function () {
         timeleft--;
         document.getElementById("time").textContent = timeleft;
-        console.log(timeleft);
         if (timeleft <= 0) {
             clearInterval(interval);
             onOverlayLost();
@@ -77,7 +65,7 @@ function shuffle() {
     };
 };
 
-//flip a card on click
+//flip a card on click https://www.youtube.com/watch?v=ZniVgo8U7ek
 function flipCard() {
     if (lock === true) return;
     if (this === cardOne) return;
@@ -85,10 +73,8 @@ function flipCard() {
     this.classList.remove('hover');
     if (!clickedCard) {
         clickedCard = true;
-        console.log("firstcard");
         cardOne = this;
     } else {
-        console.log("secondcard");
         clickedCard = false;
         cardTwo = this;
         lock = true;
@@ -103,14 +89,11 @@ function getCardType(card) {
    return dataCard;
 };
 
-
 //match cards
 function matchCard() {
     if (getCardType(cardOne) === getCardType(cardTwo)) {
-        console.log("match");
         match();
     } else {
-        console.log("MISmatch");
         misMatch();
     };
 };
@@ -120,15 +103,10 @@ function match() {
     cardOne.removeEventListener('click', flipCard);
     cardOne.classList.remove('hover');
     matchedArr.push(cardOne);
-    console.log(matchedArr);
     cardTwo.removeEventListener('click', flipCard);
     cardTwo.classList.remove('hover');
     matchedArr.push(cardTwo);
-    console.log(cardTwo);
     lock = false;
-       // if (matchedArr.length === cardsArr.length)  {
-        //    onOverlayVictory();
-        //};
 };
 
 //if cards don't match
@@ -137,7 +115,7 @@ function misMatch() {
     cardOne.classList.remove('flip');
     cardOne.classList.add('hover');
     cardTwo.classList.remove('flip');
-     cardOne.classList.add('hover');
+    cardOne.classList.add('hover');
     lock = false;
     cardOne = undefined;
     }, 1100);
@@ -151,7 +129,6 @@ function flipCardsBack() {
 //overlay on and off functions for second-input overlay, victory overlay, lost game overlay
 //overlay functions from w3schools https://www.w3schools.com/howto/howto_css_overlay.asp 
 function onOverlaySeconds() {
-    console.log("onOverlay");
     let overlay = document.getElementById("overlay-seconds");
     overlay.style.display = "block";
     document.getElementById("play").addEventListener("click", secondsRequired);
@@ -169,7 +146,6 @@ function secondsRequired()  {
 };
 
 function onOverlayLost() {
-    console.log("onOverlayLost");
     let overlay = document.getElementById("overlay-lost");
     overlay.style.display = "block";
     document.getElementById("flips").innerHTML = 0;
@@ -179,31 +155,26 @@ function onOverlayLost() {
 }
 
 function onOverlayVictory() {
-    console.log("onOverlayVictory");
     let overlay = document.getElementById("overlay-victory");
     overlay.style.display = "block";
     document.getElementById("flips").innerHTML = 0;
     setTimeout(() => {
         offOverlayVictory();
-        console.log('offoverlay victory');
     }, 7000);
 }
 
 function offOverlayLost() {
-    console.log('offoverlaylost');
     document.getElementById("overlay-lost").style.display = "none";
     onOverlaySeconds();
 }
 
 function offOverlayVictory() {
-    console.log('offoverlayVictory');
     document.getElementById("overlay-victory").style.display = "none";
     onOverlaySeconds();
 }
 
 //preventDefault https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit
 function offOverlaySeconds(e) {
-    console.log('offoverlay')
     document.getElementById("overlay-seconds").style.display = "none";
      e.preventDefault();
     startGame();
