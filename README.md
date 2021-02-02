@@ -37,4 +37,6 @@ sol: so the integration of the timer changed all this, it was working properly b
 -how to chain events? code is too long, this could be prettier!(answer from mntor, was not working. asking tutor in future)
 -in time function: when time is finished, lostGame function is called. But this gets called right away when starting up the game. Whyyyy?????
 -if you win really on the last second, the win screen and lost screen both pop up (lost is dominant). solved it by integrating the overlay on in the time function instead of the match function. Switched oder, first clear interval then overlays. 
-
+-lichthouse issues: no disability things on the play button and seconds screen. added the label and button aria label. 
+-simulator tests throuout devices with chrome dev tools
+-the overlay was never really long enough. could fix this in chrome by tweaking all the min-heigth width properties but not accross browsers. Found out i forgot to remove standard padding and margin on body.https://stackoverflow.com/questions/2852276/make-div-overlay-entire-page-not-just-viewport
