@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#0f0d0d">
     <!--https://developers.facebook.com/docs/sharing/webmasters/getting-started/basic-link/-->
@@ -28,11 +28,11 @@
         <div id="overlay-seconds" class="overlay-seconds-image">
             <h1 class="overlay-text">How naughty is your memory?</h1>
                     <form>
-                        <label for="seconds">
-                            <p class="overlay-text-small heading3">Insert desired playtime in seconds</p>
+                        <label for="seconds" class="overlay-text-small heading3">
+                            Insert desired playtime in seconds
                         </label>
                         <br>
-                        <input type="number" name="seconds" maxlength="3" id="seconds" placeholder="100" />
+                        <input type="number" name="seconds" id="seconds" placeholder="100" />
                         <br>
                         <p class="overlay-text-small heading3">to play</p>
                         <!--how to add icon to submit field answer by johnkennedy9147 https://forum.freecodecamp.org/t/solved-adding-font-awesome-icons-to-an-input-button/74139-->
@@ -55,12 +55,12 @@
             <p class="heading2">Click on a card and search its match</p>
             <hr>
             <div class="scorekeeper">
-                <span class="flips">
+                <div class="flips"> 
                     <p>Flips:</p><p id="flips"></p>
-                </span>
-                <span class="time">
+                </div>
+                <div class="time">
                     <p>Time:</p><p id="time"></p>
-                </span>
+                </div>       
             </div>
         </section>
     </header>

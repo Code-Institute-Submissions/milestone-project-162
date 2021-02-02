@@ -138,7 +138,7 @@ function onOverlaySeconds() {
 //how to set required in javascript https://www.w3resource.com/javascript/form/non-empty-field.php
 function secondsRequired()  {
     let seconds = document.getElementById("seconds");
-    if (seconds.value.length == 0) { 
+    if (seconds.value.length === 0) { 
          alert("Please fill in seconds to play");  	 
       } else { 
       offOverlaySeconds(event); 

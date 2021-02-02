@@ -40,3 +40,4 @@ sol: so the integration of the timer changed all this, it was working properly b
 -lichthouse issues: no disability things on the play button and seconds screen. added the label and button aria label. 
 -simulator tests throuout devices with chrome dev tools
 -the overlay was never really long enough. could fix this in chrome by tweaking all the min-heigth width properties but not accross browsers. Found out i forgot to remove standard padding and margin on body.https://stackoverflow.com/questions/2852276/make-div-overlay-entire-page-not-just-viewport
+https://jigsaw.w3.org/css-validator/

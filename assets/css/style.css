@@ -170,6 +170,8 @@ input[type=number] {
   border: 2px solid white;
   border-radius: 12px;
   padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 input[type=number]:focus {
