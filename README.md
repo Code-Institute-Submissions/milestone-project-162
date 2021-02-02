@@ -1,16 +1,15 @@
-Memory Game-
+<h1>Memory Game</h1>
 
-How naughty is your memory?
+<h2>How naughty is your memory?</h2>
 
-A fun website to play a pinup themed memory game. The website features a starting page with a black and white background gif and a play button. 
-Then the user is led to a  memory game with :: cards. The time of the game is adjustable at the start of the game, so the player can make a real challenge for themselves. 
+**A fun website to play a pinup themed memory game. The website features a starting page with a black and white background gif and a play button. 
+Then the user is led to a  memory game with 30 cards.  
+The time of the game is adjustable at the start of the game, so the player can make a real challenge for themselves.  
+There is also a possibility to see your flips, beside the time- it is the amout of pairs flipped of your session.  
+This site is more attractive then the average online memory game and therefore has potential to entertain the visitors.  
+The goal of the site is to entertain, the goal of the visitor is to be entertained.** 
 
-There is also a possibility to see your score, beside the time- it is the won vs lost score of your session. 
-This site is more attractive then the average online memory game and therefore has potential to entertain the visitors.
-
-The goal of the site is to entertain, the goal of the visitor is to be entertained. 
-
-UX
+<h2>UX</h2>
 
 The ideal visitor has a feeling for humor, is not too prude (even though the content is absolutely not x-rated)
 and likes playing memory games online. 
@@ -19,25 +18,101 @@ Visitors are searching for an entertaining experience.
 This website provides that because it has a cheeky theme and is not only designed to be practical but also 
 in a visually pleasing way. The visitor can have a game, a laugh and a pleasant virtual experience. 
 
-Visitor stories
-As a new visitor, i want to easily find my way to the game.
-As a new visitor, i would like to understand how to play without reading anything.
-As a player, i want to see my score.
-As a player, i want to adjust my level.
-As a fan, i want to share this game.
+<h3>Visitor stories</h3>
 
-Wireframes: 
+1. As a new visitor, i want to easily find my way to the game.
+2. As a new visitor, i would like to understand how to play without reading anything.
+3. As a player, i want to see my score.
+4. As a player, i want to adjust my level (by changing the time i can play)
 
+*Visitors find the experience they are searching for because:*
+- This game is visually pleasing
+- It is not super easy and does not start with 4/5 pairs of cards like most online memory games
+- The player can change the level easily, thus creating an easier game or a true challenge
+- The navigation is easy and straightforeward, in one click the game begins
 
-bugs that i see on the way: 
--if card is clicked as card one, falsley matched, fipped back and again as card one - it does not flip. sol: this is because cardone is still defined. I came to the answer while chatting to a tutor, he told me this is called rubber ducking. Adding cardOne 0 undefned did the trick
--onload or documentreadystate triggers overlay but does this continuesly, not just one time. whyyyyy
-When the page is loaded, an overlay is activated- and on click, this overlay should disappear. The weird thing is, that it only works a little. Sometimes is disappears/comes back/disappears/comes back and then it is suddenly gone (if you click it loads of times) but i cannot figure out why. I have a feeling when the page is loading still maybe? But too inconsistent for that...Any tip is welcome! 
-sol: so the integration of the timer changed all this, it was working properly by creating the startgame function and the time function(not sure why though), but when i made the fill in field of seconds obligatory (in a from html tag) it did it again. I learned that when a form is submitted the page reloads so i needed to create a button instead, with a event preventDefault in the function that runs the offoverlay. Now it does not reload. 
--how to chain events? code is too long, this could be prettier!(answer from mntor, was not working. asking tutor in future)
--in time function: when time is finished, lostGame function is called. But this gets called right away when starting up the game. Whyyyy?????
--if you win really on the last second, the win screen and lost screen both pop up (lost is dominant). solved it by integrating the overlay on in the time function instead of the match function. Switched oder, first clear interval then overlays. 
--lichthouse issues: no disability things on the play button and seconds screen. added the label and button aria label. 
--simulator tests throuout devices with chrome dev tools
--the overlay was never really long enough. could fix this in chrome by tweaking all the min-heigth width properties but not accross browsers. Found out i forgot to remove standard padding and margin on body.https://stackoverflow.com/questions/2852276/make-div-overlay-entire-page-not-just-viewport
-https://jigsaw.w3.org/css-validator/
+<h3>Wireframes</h3>
+
+![Overlay desktop version](/assets/img/wireframes/wireframe1.png)
+![Index.html desktop version](/assets/img/wireframes/wireframe2.png)
+![Overlay mobile version](/assets/img/wireframes/wireframe3.png)
+![Index.html mobile version](/assets/img/wireframes/wireframe4.png)
+
+<h2>Features</h2>
+
+*The game features three overlays and a main page.*
+
+- Overlay *"seconds"* is the first thing a player sees when visiting the site. This overlay is a black and white gif of a woman's knees, lifting up her skirt above them and placing the skirt back down aswell.
+The title is How Naughty is your memory? And under that you can select the amount of seconds that you would like to complete the game. When you click on the play icon, the overlay closes.
+
+- Index.html page features a memory game of 30 cards, a countdown of the seconds that the player chose and a counter of flips. The cards flip on click and display a drawing of a pin up, they are paired - when the player finds two
+the same they stay 'open'. This lasts until all cards are flipped, on what the *"victory"* overlay is activated, or the countdown finishes and the *"lost"* overlay is displayed.
+
+- *"Victory"* overlay displays a black and white gif of a sexy moving Dita von Teese and the text: Victory, enjoy your Teese. After 6 seconds the overlay changes automatically to the *"seconds"* overlay.
+
+- *"Lost"* overlay displays a black and white gif of a stern looking woman, with the text: Oh no! You lost. After 6 seconds the overlay changes automatically to the *"seconds"* overlay.
+
+*Features to implement in the future:*
+
+- The game could be improved by making the player choose the amount of cards aswell
+- Adding more games with the same theme to choose from  
+etc
+
+<h2>Technologies used</h2>
+
+- Gitpod to develop the website
+- GitHub to deploy the website
+- Google fonts for the old fashioned font
+- Html, Css and JavaScript are the developing languages
+- moqups.com for the wireframes
+- lambdatest.com for static testing
+- Chrome dev tools for manual testing
+
+<h2>Testing</h2>
+
+Testing information can be found in the [TESTING.md](TESTING.md) file
+
+<h2>Deployment</h2>
+
+The game is deployed through GitHub. 
+
+Steps to setup GitHub deployment:
+- Go to your project's Code & Deploys page, in the Repository tab.
+- Click the CONNECT TO GITHUB button to connect your project with GitHub. 
+- Connect to one of your GitHub repositories. 
+- Configure the deploy options.
+- Deploy your project.
+(as described by https://support.zyte.com/)
+
+This is what i did. The configuration is on auto, that means that the repository will get updated if i push 
+something from the connected GitPod dev area. The site is now live at https://annakovesdi.github.io/milestone-project-2/
+
+<h2>Credits</h2>
+
+While starting to try to tackle Javascript i recreated two youtube tutorials in its entierty. These tutorials are: 
+- **Memory Card Game - JavaScript Tutorial** (https://www.youtube.com/watch?v=ZniVgo8U7ek&t=4s) by FreeCodeCamp.org  
+
+and 
+
+- **How To Code A Card Game In Plain JavaScript - Spooky Halloween Edition** (https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=2637s) by PortEXE
+
+I relied heavily on these recources to write my code. I am sure a lot of the logic of the tutorials is completely integrated in my project. I watched them so often, i can recite them in my sleep. It was very hard to get 
+a hang of Javascript for me but i have to say that i really start to "get" it, finally, and am planning to practice A LOT.  
+Towards the end, the code was flowing, and i could solve issues by myself (i got help of tutors before that).
+>The memory card game tutorials were my beacon the darkness, my lighthouse in a stormy sea, my refuge from a desperate stackoverflow wormhole. I can not credit them enough for helping me forward and making this game.
+
+To get a hang of the subject i did: 
+- The entire Javascript coding chaper of FreeCodeCamp 
+- and deep dived into their video tutorial (https://www.youtube.com/watch?v=PkZNo7MFNFg)
+- read the book "A smarter way to learn Javascript" by Mark Myers 
+
+I have to credit all of these for finally getting there, where i needed to be in my understanding of this language. 
+
+<h3>GIFs and pictures</h3>
+
+Credit of the gifs goes to GIPHY.
+- Woman Legs GIF for "seconds" overlay
+- Black And White Brooks GIF for "lost" overlay
+- Oh Dita Take Me Now GIF for "victory" overlay
+
+Credit of the drawn images on the cards goes to *AnnaliseArt* on Pixabay.com
