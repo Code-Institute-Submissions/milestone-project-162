@@ -78,29 +78,38 @@ Lighthouse told me that accessibility was weak because of the play button and th
 
 <h3>Memory Game</h3>
 
-The cards of the memory game are tested by various 'crazy clicking' tests. If you click a card, and then another one, JavaScript checks for a match and leaves the cards open if they match or turns them 
+The cards of the memory game are tested by various 'crazy clicking' tests. 
+
+1. If you click a card, and then another one, JavaScript checks for a match and leaves the cards open if they match or turns them 
 back when they don't. To test this functionality I tried clicking the same card twice, to check if I properly prevented from forming a match like this by itself. I also tried to click super fast on a lot of cards, to see if I 
-prevented that no more then two cards could be flipped in one go. I also tried to click the same unmatching cards over and over again, to see if they would flip like I would like them to. 
+prevented that no more then two cards could be flipped in one go. 
+2. I also tried to click the same unmatching cards over and over again, to see if they would flip like I would like them to. 
 This is where I ran into a bug. If I flipped cardOne and cardTwo, they did not match and flipped back, and I tried clicking the previous cardOne again as cardOne, it would not flip. This is because cardOne was still defined.
 So I needed to add cardOne = undefined to the function that flipped the cards back to solve this bug. I came to the answer while chatting to a tutor, he told me this is called rubber ducking. 
 I will add a rubber duck to my desk in the near future :). 
+3. When two cards match, they stay open and don't react anymore to any activity. They are not clickable and flippable, or dont transform on hover.
 
 <h3>The cascading events in JavaScript</h3>
 
-The biggest issue I had was to get the cascading of events in Javascript right. I can see that all is working when I run the website and the overlay is activated immediately. 
-When the seconds are filled in as numbers and the play button is pressed, the cards are all shown with their backs and the timer is counting down from the number of seconds that the player filled in.
-The cards show a slight transition on hover and they flip when clicked. Only two cards flip in one go. Every time two cards are flipped, the counter counts a flip. 
-When the two cards match, the hover transition is disactivated, the cards stay open and are not clickable anymore. 
-When the cards don't match, they flip back. 
-If the time is up, the lost overlay gets activated, and after 6 seconds, the seconds overlay is displayed again
+The biggest issue I had was to get the cascading of events in Javascript right. I can see that all is working when I run the website and 
+
+1. The overlay is activated immediately 
+2. When the seconds are filled in as numbers and the play button is pressed, the cards are all shown with their backs 
+3. The timer is counting down from the number of seconds that the player filled in
+4. The cards show a slight transition on hover and they flip when clicked
+5. Only two cards flip in one go
+6. Every time two cards are flipped, the counter counts a flip 
+7. When the two cards match, the hover transition is disactivated, the cards stay open and are not clickable anymore 
+8. When the cards don't match, they flip back 
+9. If the time is up, the lost overlay gets activated, and after 6 seconds, the seconds overlay is displayed again
 /
-If all the cards are matched, the victory overlay gets activated, and after 6 seconds, the seconds overlay is displayed again
+9. If all the cards are matched, the victory overlay gets activated, and after 6 seconds, the seconds overlay is displayed again
 
 If then the player fills in a new amount of seconds, the countdown starts again from the new amount of seconds. The flips are reset to 0. The game can be played again like the first time.
 
 I played the game an endless amount of times (with just two cards) to get all of this right.
 
-A bug I ran into when all seemed to work, was that if you win really on the last second, the win screen and lost screen both pop up (lost is dominant). solved it by integrating the overlay on in the time function instead of the match function. Switched order inside of function of the time ending and the lost overlay getting activated (first clear interval then overlays). 
+A bug I ran into when all seemed to work, was that if you win really on the last second, the win screen and lost screen both pop up (lost is dominant). I solved this by integrating the overlay on in the time function instead of the match function. Switched order inside of function of the time ending and the lost overlay getting activated (first clear interval then overlays). 
 Now, this does not happen anymore. 
 
 <h3>Testing across browsers and devices</h3>

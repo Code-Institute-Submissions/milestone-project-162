@@ -20,10 +20,10 @@ in a visually pleasing way. The visitor can have a game, a laugh, and a pleasant
 
 <h3>Visitor stories</h3>
 
-1. As a new visitor, i want to easily find my way to the game.
-2. As a new visitor, i would like to understand how to play without reading anything.
-3. As a player, i want to see my score.
-4. As a player, i want to adjust my level (by changing the time i can play)
+1. As a new visitor, I want to easily find my way to the game.
+2. As a new visitor, I would like to understand how to play without reading anything.
+3. As a player, I want to see my score.
+4. As a player, I want to adjust my level (by changing the time I can play)
 
 *Visitors find the experience they are searching for because:*
 - This game is visually pleasing
@@ -84,29 +84,29 @@ Steps to setup GitHub deployment:
 - Deploy your project.
 (as described by https://support.zyte.com/)
 
-This is what i did. The configuration is on auto, which means that the repository will get updated if i push 
+This is what I did. The configuration is on auto, which means that the repository will get updated if I push 
 something from the connected GitPod dev area. The site is now live at https://annakovesdi.github.io/milestone-project-2/
 
 <h2>Credits</h2>
 
-While starting to try to tackle Javascript i recreated two youtube tutorials in their entirety. These tutorials are: 
+While starting to try to tackle Javascript I recreated two youtube tutorials in their entirety. These tutorials are: 
 - **Memory Card Game - JavaScript Tutorial** (https://www.youtube.com/watch?v=ZniVgo8U7ek&t=4s) by FreeCodeCamp.org  
 
 and 
 
 - **How To Code A Card Game In Plain JavaScript - Spooky Halloween Edition** (https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=2637s) by PortEXE
 
-I relied heavily on these resources to write my code. I am sure a lot of the logic of the tutorials is completely integrated into my project. I watched them so often, i can recite them in my sleep. It was very hard to get 
-a hang of Javascript for me but i have to say that i really start to "get" it, finally, and am planning to practice A LOT.  
-Towards the end, the code was flowing, and i could solve issues by myself (i got the help of tutors before that).
+I relied heavily on these resources to write my code. I am sure a lot of the logic of the tutorials is completely integrated into my project. I watched them so often, I can recite them in my sleep. It was very hard to get 
+a hang of Javascript for me but I have to say that I really start to "get" it, finally, and am planning to practice A LOT.  
+Towards the end, the code was flowing, and I could solve issues by myself (i got the help of tutors before that).
 >The memory card game tutorials were my beacon the darkness, my lighthouse in a stormy sea, my refuge from a desperate stackoverflow wormhole. I can not credit them enough for helping me forward and making this game.
 
-To get a hang of the subject i did: 
+To get a hang of the subject I did: 
 - The entire Javascript coding chapter of FreeCodeCamp 
 - and deep-dived into their video tutorial (https://www.youtube.com/watch?v=PkZNo7MFNFg)
 - read the book "A smarter way to learn Javascript" by Mark Myers 
 
-I have to credit all of these for finally getting there, where i needed to be in my understanding of this language. 
+I have to credit all of these for finally getting there, where I needed to be in my understanding of this language. 
 
 <h3>GIFs and pictures</h3>
 
