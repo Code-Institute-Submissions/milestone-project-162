@@ -87,6 +87,12 @@ Steps to setup GitHub deployment:
 This is what I did. The configuration is on auto, which means that the repository will get updated if I push 
 something from the connected GitPod dev area. The site is now live at https://annakovesdi.github.io/milestone-project-2/
 
+You can clone a repository from GitHub to your local computer to make it easier to fix merge conflicts, add or remove files, and push larger commits. When you clone a repository, you copy the repository from GitHub to your local machine.
+
+Cloning a repository pulls down a full copy of all the repository data that GitHub has at that point in time, including all versions of every file and folder for the project. You can push your changes to the remote repository on GitHub, or pull other people's changes from GitHub. 
+How to do this is described dtep by step at 
+https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+
 <h2>Credits</h2>
 
 While starting to try to tackle Javascript I recreated two youtube tutorials in their entirety. These tutorials are: 
@@ -99,6 +105,11 @@ and
 I relied heavily on these resources to write my code. I am sure a lot of the logic of the tutorials is completely integrated into my project. I watched them so often, I can recite them in my sleep. It was very hard to get 
 a hang of Javascript for me but I have to say that I really start to "get" it, finally, and am planning to practice A LOT.  
 Towards the end, the code was flowing, and I could solve issues by myself (i got the help of tutors before that).
+I tried to credit my code where appropiate. I hope you understand that it is not that clear: I try to refrain from copy pasting code in it's entirety. I change things as I go along.
+The credit is there, sometimes almost the same, sometimes more as the inspiring and teaching scource from where it started. 
+
+
+
 >The memory card game tutorials were my beacon the darkness, my lighthouse in a stormy sea, my refuge from a desperate stackoverflow wormhole. I can not credit them enough for helping me forward and making this game.
 
 To get a hang of the subject I did: 
@@ -111,8 +122,24 @@ I have to credit all of these for finally getting there, where I needed to be in
 <h3>GIFs and pictures</h3>
 
 The credit for the gifs goes to GIPHY.
-- Woman Legs GIF for "seconds" overlay
-- Black And White Brooks GIF for "lost" overlay
-- Oh Dita Take Me Now GIF for "victory" overlay
+- Woman Legs GIF for "seconds" overlay https://giphy.com/gifs/woman-legs-2j5Jj6bjfNJLy
+- Black And White Brooks GIF for "lost" overlay https://giphy.com/gifs/brooks-louise-736he3qcXJhwQ
+- Oh Dita Take Me Now GIF for "victory" overlay https://giphy.com/gifs/dita-von-teese-oh-take-me-now-p09nbHVNTYn6
 
 The credit of the drawn images on the cards goes to *AnnaliseArt* on Pixabay.com
+- Girl 3 https://pixabay.com/illustrations/pin-up-girl-retro-marilyn-monroe-5019512/
+- Girl 6 https://pixabay.com/illustrations/pin-up-girls-retro-vintage-fashion-4997597/
+- Girl 12 https://pixabay.com/illustrations/pin-up-girls-retro-vintage-fashion-4997605/
+- Girl 15 https://pixabay.com/illustrations/woman-pin-up-christmas-retro-5715011/
+- Girl 11 https://pixabay.com/illustrations/pin-up-girls-retro-vintage-fashion-4997604/
+- Girl 8 https://pixabay.com/illustrations/pin-up-girls-retro-vintage-fashion-4997599/
+- Girl 7 https://pixabay.com/illustrations/pin-up-girls-retro-vintage-fashion-4997598/
+- Girl 5 https://pixabay.com/illustrations/pin-up-girls-retro-vintage-fashion-4997592/
+- Girl 10 https://pixabay.com/illustrations/pin-up-girls-retro-vintage-fashion-4997603/
+- Girl 16 https://pixabay.com/illustrations/pin-up-girl-picnic-retro-pinups-4898242/
+- Girl 4 https://pixabay.com/illustrations/pin-up-girl-retro-vintage-1950-s-5049068/
+- Girl 2 https://pixabay.com/illustrations/pin-up-retro-vintage-model-girl-5066963/
+- Girl 9 https://pixabay.com/illustrations/pin-up-girls-retro-vintage-fashion-4997602/
+- Girl 13 https://pixabay.com/illustrations/pin-up-girls-retro-vintage-fashion-4997608/
+- Girl 14 https://pixabay.com/illustrations/woman-penguin-christmas-pin-up-girl-5715008/
+

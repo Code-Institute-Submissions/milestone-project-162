@@ -89,6 +89,24 @@ So I needed to add cardOne = undefined to the function that flipped the cards ba
 I will add a rubber duck to my desk in the near future :). 
 3. When two cards match, they stay open and don't react anymore to any activity. They are not clickable and flippable, or dont transform on hover.
 
+<h3>Lost Overlay</h3>
+
+The lost overlay activates when the countdown of the timer arrives at 0. The big bug I had with this overlay was that it would get called immediately when te page loaded, because the timer would not get called at a certain point, but when the page loaded. 
+Like this, it would be 0, so the lostGame function would get called. 
+Initially, the timer was made to this example: 
+
+![Timer code](/assets/img/screenshots/timer.png)
+
+To make sure not to call it on load i made it into a function. Now the issue was that it would never stop counting. The clearInterval 
+only works when the timer is a variable, not a function. So i did not know how to solve this paradox. My mentor, Victor Miclovich, helped me out on this.
+The variable was placed inside the function, so it would get called in the startGame function, but also could use clearInterval to stop the timer at 0. 
+Elegant and simple!
+
+<h3>Victory Overlay</h3>
+
+The victory overlay activates when the game is won. It was the last thing to build, and by this time, JavaScript started to be a friend instead of an enemy.
+It was simple to make work, things needed a bit of adjusting when starting a new game but it took me few time and freely flowimng code! Finally!
+
 <h3>The cascading events in JavaScript</h3>
 
 The biggest issue I had was to get the cascading of events in Javascript right. I can see that all is working when I run the website and 
@@ -119,3 +137,8 @@ Now, this does not happen anymore.
 I did simulator tests throughout devices with chrome dev tools. I made sure the game looks okay on mobile devices, laptops and ipads. 
 I asked (facebook)friends and family to play the game and let me know what browser and device they used, and if they ran into any bugs. 
 No bugs were reported, and lots of different devices were used. 
+- iphone, samsung, huawei, xiaomi
+- windows pc, macbook, imac, asus laptop
+- safari, firefox, chrome, edge
+
+I ran the site through lambdatest to check it across browsers. Besides the little issue described above at seconds overlay there were no other discrepancies. 
