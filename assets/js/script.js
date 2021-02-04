@@ -89,7 +89,7 @@ function getCardType(card) {
    return dataCard;
 };
 
-//match cards
+//match cards https://www.youtube.com/watch?v=ZniVgo8U7ek
 function matchCard() {
     if (getCardType(cardOne) === getCardType(cardTwo)) {
         match();
@@ -109,7 +109,7 @@ function match() {
     lock = false;
 };
 
-//if cards don't match
+//if cards don't match. Set timeout: https://www.w3schools.com/jsref/met_win_settimeout.asp
 function misMatch() {
     setTimeout(() => {
     cardOne.classList.remove('flip');
