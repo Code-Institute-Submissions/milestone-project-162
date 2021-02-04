@@ -101,9 +101,11 @@ The biggest issue I had was to get the cascading of events in Javascript right. 
 6. Every time two cards are flipped, the counter counts a flip 
 7. When the two cards match, the hover transition is disactivated, the cards stay open and are not clickable anymore 
 8. When the cards don't match, they flip back 
-9. If the time is up, the lost overlay gets activated, and after 6 seconds, the seconds overlay is displayed again
-/
-9. If all the cards are matched, the victory overlay gets activated, and after 6 seconds, the seconds overlay is displayed again
+9. If the time is up, the lost overlay gets activated, and after 6 seconds, the seconds overlay is displayed again 
+
+or  
+
+10. If all the cards are matched, the victory overlay gets activated, and after 6 seconds, the seconds overlay is displayed again
 
 If then the player fills in a new amount of seconds, the countdown starts again from the new amount of seconds. The flips are reset to 0. The game can be played again like the first time.
 
