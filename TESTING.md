@@ -105,7 +105,7 @@ Elegant and simple!
 <h3>Victory Overlay</h3>
 
 The victory overlay activates when the game is won. It was the last thing to build, and by this time, JavaScript started to be a friend instead of an enemy.
-It was simple to make work, things needed a bit of adjusting when starting a new game but it took me few time and freely flowimng code! Finally!
+It was simple to make work, things needed a bit of adjusting when starting a new game but it took me few time and freely flowing code! Finally!
 
 <h3>The cascading events in JavaScript</h3>
 
