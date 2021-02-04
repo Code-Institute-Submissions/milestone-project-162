@@ -5,8 +5,8 @@
 **A fun website to play a pinup themed memory game. The website features a starting page with a black and white background gif and a play button. 
 Then the user is led to a  memory game with 30 cards.  
 The time of the game is adjustable at the start of the game, so the player can make a real challenge for themselves.  
-There is also a possibility to see your flips, beside the time- it is the amout of pairs flipped of your session.  
-This site is more attractive then the average online memory game and therefore has potential to entertain the visitors.  
+There is also a possibility to see your flips, beside the time- it is the amount of pairs flipped of your session.  
+This site is more attractive than the average online memory game and therefore has the potential to entertain visitors.  
 The goal of the site is to entertain, the goal of the visitor is to be entertained.** 
 
 <h2>UX</h2>
@@ -16,7 +16,7 @@ and likes playing memory games online.
 
 Visitors are searching for an entertaining experience.
 This website provides that because it has a cheeky theme and is not only designed to be practical but also 
-in a visually pleasing way. The visitor can have a game, a laugh and a pleasant virtual experience. 
+in a visually pleasing way. The visitor can have a game, a laugh, and a pleasant virtual experience. 
 
 <h3>Visitor stories</h3>
 
@@ -29,7 +29,7 @@ in a visually pleasing way. The visitor can have a game, a laugh and a pleasant 
 - This game is visually pleasing
 - It is not super easy and does not start with 4/5 pairs of cards like most online memory games
 - The player can change the level easily, thus creating an easier game or a true challenge
-- The navigation is easy and straightforeward, in one click the game begins
+- The navigation is easy and straightforward, in one click the game begins
 
 <h3>Wireframes</h3>
 
@@ -40,21 +40,21 @@ in a visually pleasing way. The visitor can have a game, a laugh and a pleasant 
 
 <h2>Features</h2>
 
-*The game features three overlays and a main page.*
+*The game features three overlays and the main page.*
 
-- Overlay *"seconds"* is the first thing a player sees when visiting the site. This overlay is a black and white gif of a woman's knees, lifting up her skirt above them and placing the skirt back down aswell.
-The title is How Naughty is your memory? And under that you can select the amount of seconds that you would like to complete the game. When you click on the play icon, the overlay closes.
+- Overlay *"seconds"* is the first thing a player sees when visiting the site. This overlay is a black and white gif of a woman's knees, lifting up her skirt above them and placing the skirt back down as well.
+The title is How Naughty is your memory? And under that, you can select the number of seconds that you would like to complete the game. When you click on the play icon, the overlay closes.
 
-- Index.html page features a memory game of 30 cards, a countdown of the seconds that the player chose and a counter of flips. The cards flip on click and display a drawing of a pin up, they are paired - when the player finds two
-the same they stay 'open'. This lasts until all cards are flipped, on what the *"victory"* overlay is activated, or the countdown finishes and the *"lost"* overlay is displayed.
+- Index.html page features a memory game of 30 cards, a countdown of the seconds that the player chose, and a counter of flips. The cards flip on click and display a drawing of a pin-up, they are paired - when the player finds two
+the same they stay 'open'. This lasts until all cards are flipped, on which the *"victory"* overlay is activated, or the countdown finishes, and the *"lost"* overlay is displayed.
 
 - *"Victory"* overlay displays a black and white gif of a sexy moving Dita von Teese and the text: Victory, enjoy your Teese. After 6 seconds the overlay changes automatically to the *"seconds"* overlay.
 
-- *"Lost"* overlay displays a black and white gif of a stern looking woman, with the text: Oh no! You lost. After 6 seconds the overlay changes automatically to the *"seconds"* overlay.
+- *"Lost"* overlay displays a black and white gif of a stern-looking woman, with the text: Oh no! You lost. After 6 seconds the overlay changes automatically to the *"seconds"* overlay.
 
 *Features to implement in the future:*
 
-- The game could be improved by making the player choose the amount of cards aswell
+- The game could be improved by making the player choose the number of cards as well
 - Adding more games with the same theme to choose from  
 etc
 
@@ -84,35 +84,35 @@ Steps to setup GitHub deployment:
 - Deploy your project.
 (as described by https://support.zyte.com/)
 
-This is what i did. The configuration is on auto, that means that the repository will get updated if i push 
+This is what i did. The configuration is on auto, which means that the repository will get updated if i push 
 something from the connected GitPod dev area. The site is now live at https://annakovesdi.github.io/milestone-project-2/
 
 <h2>Credits</h2>
 
-While starting to try to tackle Javascript i recreated two youtube tutorials in its entierty. These tutorials are: 
+While starting to try to tackle Javascript i recreated two youtube tutorials in their entirety. These tutorials are: 
 - **Memory Card Game - JavaScript Tutorial** (https://www.youtube.com/watch?v=ZniVgo8U7ek&t=4s) by FreeCodeCamp.org  
 
 and 
 
 - **How To Code A Card Game In Plain JavaScript - Spooky Halloween Edition** (https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=2637s) by PortEXE
 
-I relied heavily on these recources to write my code. I am sure a lot of the logic of the tutorials is completely integrated in my project. I watched them so often, i can recite them in my sleep. It was very hard to get 
+I relied heavily on these resources to write my code. I am sure a lot of the logic of the tutorials is completely integrated into my project. I watched them so often, i can recite them in my sleep. It was very hard to get 
 a hang of Javascript for me but i have to say that i really start to "get" it, finally, and am planning to practice A LOT.  
-Towards the end, the code was flowing, and i could solve issues by myself (i got help of tutors before that).
+Towards the end, the code was flowing, and i could solve issues by myself (i got the help of tutors before that).
 >The memory card game tutorials were my beacon the darkness, my lighthouse in a stormy sea, my refuge from a desperate stackoverflow wormhole. I can not credit them enough for helping me forward and making this game.
 
 To get a hang of the subject i did: 
-- The entire Javascript coding chaper of FreeCodeCamp 
-- and deep dived into their video tutorial (https://www.youtube.com/watch?v=PkZNo7MFNFg)
+- The entire Javascript coding chapter of FreeCodeCamp 
+- and deep-dived into their video tutorial (https://www.youtube.com/watch?v=PkZNo7MFNFg)
 - read the book "A smarter way to learn Javascript" by Mark Myers 
 
 I have to credit all of these for finally getting there, where i needed to be in my understanding of this language. 
 
 <h3>GIFs and pictures</h3>
 
-Credit of the gifs goes to GIPHY.
+The credit for the gifs goes to GIPHY.
 - Woman Legs GIF for "seconds" overlay
 - Black And White Brooks GIF for "lost" overlay
 - Oh Dita Take Me Now GIF for "victory" overlay
 
-Credit of the drawn images on the cards goes to *AnnaliseArt* on Pixabay.com
+The credit of the drawn images on the cards goes to *AnnaliseArt* on Pixabay.com
